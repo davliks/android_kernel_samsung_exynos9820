@@ -30,10 +30,7 @@ jobs:
           gcc clang
         wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb && sudo dpkg -i libtinfo5_6.3-2_amd64.deb   
     
-    - name: Apply USB-Arsenal Kernel Patches (4.14)
-      run: |
-          git clone --depth=1 https://github.com/ravindu644/USB-Arsenal.git /tmp/USB-Arsenal/
-          git apply /tmp/USB-Arsenal/kernel-patches/4.14/*.patch
+    
     - name: Setting permission
       run: |    
         chmod +x build.sh
