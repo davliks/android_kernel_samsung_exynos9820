@@ -28,7 +28,7 @@ jobs:
           python3 curl rsync kmod libelf-dev \
           lz4 tar openssl python3-pip \
           gcc clang
-        wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb && sudo dpkg -i libtinfo5_6.3-2ubuntu0.1_amd64.deb   
+        wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb && sudo dpkg -i libtinfo5_6.3-2_amd64.deb   
 
     - name: Setting permission
       run: |    
